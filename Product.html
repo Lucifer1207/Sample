@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,25 +17,59 @@
      url(
 "BackGround.jpg");
 }
+.row{
+margin:60px;
+margin-left: -200px;
+margin-right: -250px;
+}
+
   .c{
-    width: 18rem ;
+    width: 22rem ;
     height:350px;
-     background-color:grey ;
-      box-shadow:9px 9px 9px black ;
-       border-radius:10% ;
+     background-color:transparent;
+      box-shadow:12px 12px 12px 12px black ;
+       border-radius:4% ;
         overflow:hidden;
+        margin-right:10px;
+        border: 2px solid burlywood;
   }
   .u{
-  box-shadow: 8px 8px  black;
+  box-shadow: 6px 6px  black;
+  background-color: black;
+  margin-left: 34%;
 }
+
+
+.card-title{
+  color: burlywood;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 4px;
+}
+
   img{
-    height:200px;
+    height:230px;
     border-radius:5%;
+    border: 2px solid black;
   }
   .s{
     font-size: 20px;
     font-weight: 700;
 }
+
+
+.b{
+  box-shadow: 10px 10px 10px black;
+  margin-left: 125px;
+  margin-top: 1%;
+  color: burlywood;
+  background-color: black;
+  border: 1px solid burlywood;
+}
+
+
+
 
 </style>
 <body>
@@ -42,7 +77,7 @@
   
     <nav class="navbar navbar-expand-lg bg-body-tertiary qr">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./Index.html"><h2><strong>ElectroSemi India</strong></h2></a>
+          <a class="navbar-brand" href="index.html"><h2><strong>ElectroSemi India</strong></h2></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span> 
           </button>
@@ -52,10 +87,10 @@
               <li class="nav-item dropdown">
                 
                 <li class="nav-item dropdown">
-                    <button class='btn btn '><a class='btn btn col s' href="/Product.html">Products</a></button>
-                    <button class='btn btn col'><a class='btn btn col s' href="./Client.html">Our Clients</a></button>
-                    <button class='btn btn col s'>Contact Us</button>
-                    <button class='btn btn col'><a class='btn btn col s' href="/AboutUs.html">About us</a></button>
+                    <button class='btn btn '><a class='btn btn col s' href="Product.html">Products</a></button>
+                    <button class='btn btn col'><a class='btn btn col s' href="Client.html">Our Clients</a></button>
+                    <button class='btn btn col s'><a class='btn btn col s' href="contact_us.html">Contact Us</a></button>
+                    <button class='btn btn col'><a class='btn btn col s' href="AboutUs.html">About us</a></button>
                    </li>
               </li>
              
@@ -69,98 +104,284 @@
 
 
 
-    <div class="container col-sm-4 my-4 ">
+    <div class="container">
+      <div class="row">
+        <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="resistors" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Resistors</h5>
+      <button class="btn btn-secondary b">More</button>
+     
     </div>
-  </div>
-      </div> 
-
-      <div class="container col-sm-4 my-4 ">
+        </div>
+        </div>
+       
+          <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="connectors" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Connector</h5>
+      <button class="btn btn-secondary b">More</button>
+      
     </div>
-  </div>
-      </div> 
-
-      <div class="container col-sm-4 my-4 ">
+        </div>
+        </div>
+        <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="Batteries" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Batteries</h5>
+      <button class="btn btn-secondary b">More</button>
+    
     </div>
-  </div>
-      </div> 
+    </div>
+    </div>
 
 
-      <div class="container col-sm-4 my-4 ">
+<div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="Buzzer" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Buzzer</h5>
+      <button class="btn btn-secondary b">More</button>
+      
     </div>
-  </div>
-      </div> 
-
-
-      <div class="container col-sm-4 my-4 ">
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="crystal" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Crystal</h5>
+      <button class="btn btn-secondary b">More</button>
+     
     </div>
-  </div>
-      </div> 
-
-      <div class="container col-sm-4 my-4 ">
+        </div>
+        </div>
+       
+          <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="diode" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Diode</h5>
+      <button class="btn btn-secondary b">More</button>
+   
     </div>
-  </div>
-      </div> 
-
-
-      <div class="container col-sm-4 my-4 ">
+        </div>
+        </div>
+        <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="Electric wire Cable" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Electric Wire Cable</h5>
+      <button class="btn btn-secondary b">More</button>
+    
     </div>
-  </div>
-      </div> 
+    </div>
+    </div> 
 
-
-
-      <div class="container col-sm-4 my-4 ">
+        <div class="col">
         <div class="card c">
-    <img src="BackGround.jpg" class="card-img-top" alt="..."/>
+    <img src="ferrite bead" class="card-img-top" alt="..."/>
     <div class="card-body">
-      <h5 class="card-title">{props.title}</h5>
-      <p class="card-text">{props.discription}</p>
-      <a href={props.url} class="btn btn-secondary u">More</a>
+      <h5 class="card-title">Ferrite Bead</h5>
+      <button class="btn btn-secondary b">More</button>
+     
     </div>
-  </div>
-      </div> 
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <div class="card c">
+    <img src="inductor" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Inductor</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+        </div>
+        </div>
+       
+          <div class="col">
+        <div class="card c">
+    <img src="fuse" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Fuse</h5>
+      <button class="btn btn-secondary b">More</button>
+      
+    </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card c">
+    <img src="LCD" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">LCD</h5>
+      <button class="btn btn-secondary b">More</button>
+    
+    </div>
+    </div>
+    </div>
+
+
+<div class="col">
+        <div class="card c">
+    <img src="LED" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">LED</h5>
+      <button class="btn btn-secondary b">More</button>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <div class="card c">
+    <img src="pcb" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">PCB</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+        </div>
+        </div>
+       
+          <div class="col">
+        <div class="card c">
+    <img src="solder" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Solder Paste</h5>
+      <button class="btn btn-secondary b">More</button>
+      
+    </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card c">
+    <img src="Transistor" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Transistor</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+    </div>
+    </div> 
+
+        <div class="col">
+        <div class="card c">
+    <img src="variaster" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Varistors</h5>
+      <button class="btn btn-secondary b">More</button>
+      
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <div class="card c">
+    <img src="Voltage" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Voltage Regulator</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+        </div>
+        </div>
+       
+          <div class="col">
+        <div class="card c">
+    <img src="wire harness" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Wire Harness</h5>
+      <button class="btn btn-secondary b">More</button>
+    
+    </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card c">
+    <img src="antenna.jpg" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Antenna</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+    </div>
+    </div>
+
+<div class="col">
+        <div class="card c">
+    <img src="mosfet.jpeg" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">MOSFET</h5>
+      <button class="btn btn-secondary b">More</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <div class="card c">
+    <img src="capacitor" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Capacitor</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+        </div>
+        </div>
+       
+          <div class="col">
+        <div class="card c">
+    <img src="Thermistor" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Thermistor</h5>
+      <button class="btn btn-secondary b">More</button>
+    
+    </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card c">
+    <img src="speaker.jpg" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Speaker</h5>
+      <button class="btn btn-secondary b">More</button>
+      
+    </div>
+    </div>
+    </div> 
+
+        <div class="col">
+        <div class="card c">
+    <img src="switch.jpg" class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">Switches</h5>
+      <button class="btn btn-secondary b">More</button>
+     
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> 
+
 
 </body>
 </html>
